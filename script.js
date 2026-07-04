@@ -64,6 +64,7 @@ async function loadLatestBroadcast() {
 if (broadcastElements.title) loadLatestBroadcast();
 
 const seriesData = window.DNR_SERIES || [];
+const videoData = window.DNR_VIDEOS || [];
 
 function renderSeriesArchive() {
   const archiveGrid = document.querySelector("#series-archive");
@@ -99,8 +100,35 @@ function syncSeriesPlaylistButtons() {
   });
 }
 
+function renderVideoArchive() {
+  const videoGrid = document.querySelector("#video-archive");
+
+  if (!videoGrid || !videoData.length) return;
+
+  videoGrid.innerHTML = videoData.map((video) => `
+    <article class="archive-card">
+      <a class="archive-image-link" href="${video.videoUrl}" target="_blank" rel="noopener noreferrer">
+        <img src="${video.thumbnail}" alt="${video.title} thumbnail" loading="lazy">
+      </a>
+      <div class="archive-card-content">
+        <div class="archive-card-meta">
+          <span class="archive-status">${video.seriesName}</span>
+          <span>Episode / ${video.episode}</span>
+        </div>
+        <h2>${video.title}</h2>
+        <p>${video.description}</p>
+        <div class="archive-actions">
+          <a href="${video.seriesPage}">Open series</a>
+          <a href="${video.videoUrl}" target="_blank" rel="noopener noreferrer">Open video ↗</a>
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+
 renderSeriesArchive();
 syncSeriesPlaylistButtons();
+renderVideoArchive();
 
 const animatedElements = document.querySelectorAll(
   ".broadcast-panel, .section-heading, .series-card, .about-grid, .archive-intro, .archive-card"
