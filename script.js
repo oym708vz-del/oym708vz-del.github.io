@@ -17,7 +17,7 @@ const broadcastElements = {
 function updateBroadcastTitle(title, episode) {
   const episodePattern = new RegExp(`\s*#${episode}\s*$`, "i");
   const titleWithoutEpisode = title.replace(episodePattern, "").trim();
-  const words = titleWithoutEpisode.split(/s+/);
+  const words = titleWithoutEpisode.split(/\s+/);
   const firstWord = words.shift();
 
   broadcastElements.title.replaceChildren(document.createTextNode(firstWord));
@@ -62,6 +62,45 @@ async function loadLatestBroadcast() {
 }
 
 if (broadcastElements.title) loadLatestBroadcast();
+
+const seriesData = window.DNR_SERIES || [];
+
+function renderSeriesArchive() {
+  const archiveGrid = document.querySelector("#series-archive");
+
+  if (!archiveGrid || !seriesData.length) return;
+
+  archiveGrid.innerHTML = seriesData.map((item) => `
+    <article class="archive-card${item.status === "ON AIR" ? " active" : ""}">
+      <a class="archive-image-link" href="${item.detailPage}">
+        <img src="${item.thumbnail}" alt="${item.title} series artwork" loading="lazy">
+      </a>
+      <div class="archive-card-content">
+        <div class="archive-card-meta">
+          <span class="archive-status">${item.status}</span>
+          <span>Episodes / ${item.episodeCount}</span>
+        </div>
+        <h2><a href="${item.detailPage}">${item.title}</a></h2>
+        <p>${item.description}</p>
+        <div class="archive-actions">
+          <a href="${item.detailPage}">Open file</a>
+          <a href="${item.playlistUrl}" target="_blank" rel="noopener noreferrer">Open playlist ↗</a>
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+
+function syncSeriesPlaylistButtons() {
+  document.querySelectorAll("[data-series-id]").forEach((button) => {
+    const series = seriesData.find((item) => item.id === button.dataset.seriesId);
+
+    if (series) button.href = series.playlistUrl;
+  });
+}
+
+renderSeriesArchive();
+syncSeriesPlaylistButtons();
 
 const animatedElements = document.querySelectorAll(
   ".broadcast-panel, .section-heading, .series-card, .about-grid, .archive-intro, .archive-card"
