@@ -1,5 +1,5 @@
 const year = document.querySelector("#year");
-year.textContent = new Date().getFullYear();
+if (year) year.textContent = new Date().getFullYear();
 
 // latest.json controls the current broadcast information.
 const broadcastElements = {
@@ -15,9 +15,9 @@ const broadcastElements = {
 };
 
 function updateBroadcastTitle(title, episode) {
-  const episodePattern = new RegExp(`\\s*#${episode}\\s*$`, "i");
+  const episodePattern = new RegExp(`\s*#${episode}\s*$`, "i");
   const titleWithoutEpisode = title.replace(episodePattern, "").trim();
-  const words = titleWithoutEpisode.split(/\s+/);
+  const words = titleWithoutEpisode.split(/s+/);
   const firstWord = words.shift();
 
   broadcastElements.title.replaceChildren(document.createTextNode(firstWord));
@@ -61,10 +61,10 @@ async function loadLatestBroadcast() {
   }
 }
 
-loadLatestBroadcast();
+if (broadcastElements.title) loadLatestBroadcast();
 
 const animatedElements = document.querySelectorAll(
-  ".broadcast-panel, .section-heading, .series-card, .about-grid"
+  ".broadcast-panel, .section-heading, .series-card, .about-grid, .archive-intro, .archive-card"
 );
 
 animatedElements.forEach((element) => element.classList.add("reveal"));
