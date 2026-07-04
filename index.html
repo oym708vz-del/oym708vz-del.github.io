@@ -29,15 +29,15 @@
       <div class="broadcast-panel">
         <div>
           <p class="eyebrow" id="broadcast-title"><i></i> Now broadcasting</p>
-          <h2>RAIN<br>PROTOCOL <span class="episode-number">#01</span></h2>
-          <p class="meta">CYBERPUNK AMBIENT / RAIN / NIGHT DRIVE</p>
-          <p class="broadcast-description">Synthetic rainfall for late-night focus, night drives, and quiet work sessions.</p>
+          <h2 id="current-broadcast-title">RAIN<br>PROTOCOL <span class="episode-number">#01</span></h2>
+          <p class="meta" id="broadcast-meta">CYBERPUNK AMBIENT / RAIN / NIGHT DRIVE</p>
+          <p class="broadcast-description" id="broadcast-description">Synthetic rainfall for late-night focus, night drives, and quiet work sessions.</p>
         </div>
         <div class="broadcast-status" aria-label="Broadcast status">
-          <p><span>Status:</span><strong>On air</strong></p>
-          <p><span>Series:</span><strong>Rain Protocol</strong></p>
-          <p><span>Episode:</span><strong>01</strong></p>
-          <p><span>Next transmission:</span><strong>Neon Drift</strong></p>
+          <p><span>Status:</span><strong id="broadcast-status-value">On air</strong></p>
+          <p><span>Series:</span><strong id="broadcast-series-value">Rain Protocol</strong></p>
+          <p><span>Episode:</span><strong id="broadcast-episode">01</strong></p>
+          <p><span>Next transmission:</span><strong id="broadcast-next-transmission">Neon Drift</strong></p>
         </div>
         <div class="visualizer" aria-hidden="true">
           <span></span><span></span><span></span><span></span><span></span>
@@ -45,7 +45,7 @@
           <span></span><span></span><span></span><span></span><span></span>
           <span></span><span></span><span></span><span></span><span></span>
         </div>
-        <a class="youtube-button" href="https://youtu.be/Rw7eAWU2khs" target="_blank" rel="noopener noreferrer"><span>▶</span> WATCH TRANSMISSION</a>
+        <a class="youtube-button" id="broadcast-button" href="https://youtu.be/Rw7eAWU2khs" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▶</span> <span id="broadcast-button-text">WATCH TRANSMISSION</span></a>
       </div>
     </section>
 
