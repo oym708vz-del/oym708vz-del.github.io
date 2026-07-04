@@ -67,9 +67,19 @@ nav a:hover, nav a:focus-visible { color: var(--green); }
 
 .hero {
   min-height: 100svh;
-  max-width: 1200px;
+  position: relative;
+  background:
+    linear-gradient(90deg, rgba(5,7,6,.94) 0%, rgba(5,7,6,.76) 44%, rgba(5,7,6,.28) 78%, rgba(5,7,6,.5) 100%),
+    linear-gradient(0deg, rgba(5,7,6,.82) 0%, transparent 34%),
+    url("img/hero.jpg") center center / cover no-repeat;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-content {
+  min-height: 100svh;
+  width: min(1200px, 100%);
   margin: 0 auto;
-  padding: 150px 24px 80px;
+  padding: 150px 24px 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,16 +111,31 @@ nav a:hover, nav a:focus-visible { color: var(--green); }
   letter-spacing: -.065em;
 }
 .hero h1 em, .about h2 em { color: var(--green); font-style: normal; }
-.tagline { margin: 0; color: var(--muted); font-size: clamp(.95rem, 2vw, 1.2rem); }
-.scroll-cue {
-  position: absolute;
-  bottom: 38px;
-  color: var(--muted);
+.tagline {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  line-height: 1.45;
+}
+.hero-description { max-width: 560px; margin: 18px 0 0; color: var(--muted); font-size: .82rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.hero-button {
+  min-width: 150px;
+  padding: 13px 18px;
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: rgba(5,7,6,.46);
   font-size: .7rem;
   letter-spacing: .12em;
+  text-align: center;
   text-transform: uppercase;
+  transition: border-color .2s, color .2s, background .2s;
 }
-.scroll-cue span { color: var(--green); margin-left: 12px; }
+.hero-button:hover,
+.hero-button:focus-visible { border-color: var(--green); color: var(--green); }
+.hero-button.primary { border-color: var(--green); color: var(--black); background: var(--green); }
+.hero-button.primary:hover,
+.hero-button.primary:focus-visible { color: var(--black); background: #75ffad; }
 
 .section { max-width: 1200px; margin: 0 auto; padding: 120px 24px; }
 .section-label { margin: 0 0 24px; }
@@ -459,7 +484,7 @@ footer {
   .site-header { width: calc(100% - 36px); }
   nav { gap: 14px; }
   nav a { font-size: .62rem; }
-  .hero { padding-left: 18px; padding-right: 18px; }
+  .hero-content { padding: 140px 18px 80px; }
   .hero::after { display: none; }
   .section { padding: 82px 18px; }
   .broadcast-panel { min-height: 480px; }
