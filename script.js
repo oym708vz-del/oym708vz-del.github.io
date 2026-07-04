@@ -106,17 +106,25 @@ function renderVideoArchive() {
   if (!videoGrid || !videoData.length) return;
 
   videoGrid.innerHTML = videoData.map((video) => `
-    <article class="archive-card">
+    <article class="archive-card transmission-card">
       <a class="archive-image-link" href="${video.videoUrl}" target="_blank" rel="noopener noreferrer">
         <img src="${video.thumbnail}" alt="${video.title} thumbnail" loading="lazy">
       </a>
       <div class="archive-card-content">
-        <div class="archive-card-meta">
-          <span class="archive-status">${video.seriesName}</span>
-          <span>Episode / ${video.episode}</span>
+        <div class="transmission-date">
+          <span>Broadcast date</span>
+          <strong>${video.broadcastDate}</strong>
         </div>
-        <h2>${video.title}</h2>
-        <p>${video.description}</p>
+        <div class="transmission-title">
+          <span>Transmission title</span>
+          <h2>${video.title}</h2>
+        </div>
+        <div class="transmission-meta">
+          <p><span>Series</span><strong>${video.seriesName}</strong></p>
+          <p><span>Episode</span><strong>${video.episode}</strong></p>
+          <p><span>Status</span><strong>${video.status}</strong></p>
+        </div>
+        <p class="transmission-description">${video.description}</p>
         <div class="archive-actions">
           <a href="${video.seriesPage}">Open series</a>
           <a href="${video.videoUrl}" target="_blank" rel="noopener noreferrer">Open video ↗</a>
