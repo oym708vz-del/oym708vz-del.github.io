@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The requested DARK NETWORK RADIO transmission could not be located.">
+  <title>SIGNAL LOST | DARK NETWORK RADIO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="error-page">
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="./" aria-label="Dark Network Radio home"><i></i>DNR</a>
+    <nav aria-label="Error page navigation">
+      <a href="./">Home</a><a href="broadcasts.html">Broadcast Archive</a><a href="search.html">Signal Search</a>
+    </nav>
+  </header>
+
+  <main class="error-main">
+    <section class="error-panel" aria-labelledby="error-title">
+      <div class="error-noise" aria-hidden="true"></div>
+      <p class="section-label">Transmission Error</p>
+      <h1 id="error-title">Signal<br><em>Lost</em></h1>
+      <p class="error-copy">
+        The requested transmission could not be located.
+        The frequency may have changed, expired, or never existed.
+      </p>
+
+      <section class="error-data" aria-labelledby="error-data-title">
+        <h2 id="error-data-title">Error Data</h2>
+        <div class="error-data-grid">
+          <p><span>Error Code</span><strong>404</strong></p>
+          <p><span>Signal Status</span><strong>Not Found</strong></p>
+          <p><span>Last Known Frequency</span><strong>Unknown</strong></p>
+          <p class="requested-path-row"><span>Requested Path</span><strong id="requested-path">UNAVAILABLE</strong></p>
+        </div>
+      </section>
+
+      <div class="error-actions">
+        <a class="youtube-button" href="./">RETURN TO BROADCAST TERMINAL</a>
+        <a class="back-link" href="broadcasts.html">VIEW BROADCAST ARCHIVE</a>
+        <a class="back-link" href="search.html">SEARCH FOR A SIGNAL</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>&copy; <span id="year"></span> DARK NETWORK RADIO</p><p>TRANSMISSION REMAINS OPEN</p></footer>
+  <script>
+    const year = document.querySelector("#year");
+    const requestedPath = document.querySelector("#requested-path");
+
+    if (year) year.textContent = new Date().getFullYear();
+    if (requestedPath) requestedPath.textContent = window.location.pathname || "UNAVAILABLE";
+  </script>
+</body>
+</html>

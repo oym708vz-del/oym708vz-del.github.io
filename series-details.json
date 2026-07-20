@@ -1,0 +1,316 @@
+[
+  {
+    "id": "cyberpunk",
+    "seriesNumber": "01",
+    "name": "CYBERPUNK HACKER RADIO",
+    "displayName": "Cyberpunk Hacker Radio",
+    "status": "ARCHIVED SERIES",
+    "tagline": "Original signals from futures that never arrived.",
+    "tags": [
+      "cyberpunk",
+      "night",
+      "focus",
+      "ambient",
+      "dark"
+    ],
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLa-SUUiPmKkZ8IqFGAHJPYmMp7DJ_I_Ot",
+    "coverImage": "img/series/cyberpunk.jpg",
+    "heading": "THE ORIGINAL DARK NETWORK RADIO FREQUENCY",
+    "concept": "Cyberpunk Hacker Radio moves through neon cities, synthetic memories, and high-voltage machine rooms. It is the first frequency: direct, nocturnal, and tuned for digital drift.",
+    "atmosphere": "Neon, electric, tense, urban, and built for late-night work.",
+    "soundProfile": [
+      "Classic cyberpunk ambience",
+      "Synthetic city textures",
+      "Focused electronic movement",
+      "Instrumental only",
+      "Built for hacking and deep work"
+    ],
+    "visualIdentity": [
+      "Neon city corridors",
+      "Terminal glow",
+      "High-voltage signage",
+      "Synthetic memory fragments",
+      "Future-noir atmosphere"
+    ],
+    "episodes": []
+  },
+  {
+    "id": "terminal",
+    "seriesNumber": "02",
+    "name": "TERMINAL FOCUS RADIO",
+    "displayName": "Terminal Focus Radio",
+    "status": "ARCHIVED SERIES",
+    "tagline": "Quiet machines for long work inside the network.",
+    "tags": [
+      "focus",
+      "ambient",
+      "dark",
+      "cyberpunk"
+    ],
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLa-SUUiPmKkYg1n_hiG5SJ7utJKTnzsqn",
+    "coverImage": "img/series/terminal.jpg",
+    "heading": "A FOCUSED MACHINE-AMBIENT WORK NODE",
+    "concept": "Terminal is the quiet machine side of DARK NETWORK RADIO. It is designed for coding sessions, uninterrupted concentration, and the strange comfort of staying connected after midnight.",
+    "atmosphere": "Minimal, mechanical, focused, dark, and continuous.",
+    "soundProfile": [
+      "Machine ambience",
+      "Minimal melodic movement",
+      "Low-distraction textures",
+      "Long-session pacing",
+      "Built for coding and deep work"
+    ],
+    "visualIdentity": [
+      "Terminal windows",
+      "Green text glow",
+      "Server-room darkness",
+      "Interface grids",
+      "Quiet command-line atmosphere"
+    ],
+    "episodes": []
+  },
+  {
+    "id": "night-ambient",
+    "seriesNumber": "03",
+    "name": "NIGHT AMBIENT",
+    "displayName": "Night Ambient",
+    "status": "ARCHIVED SERIES",
+    "tagline": "The slowest signal in the archive.",
+    "tags": [
+      "night",
+      "ambient",
+      "sleep",
+      "relax",
+      "dark"
+    ],
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLa-SUUiPmKkYrnTwsD88oENkfD9ryVy1z",
+    "coverImage": "img/series/night-ambient.jpg",
+    "heading": "A NOCTURNAL FREQUENCY FOR QUIET HOURS",
+    "concept": "Night Ambient follows distant lights and soft textures through the hours when the city is almost still. It is made for sleep, recovery, and slow late-night immersion.",
+    "atmosphere": "Slow, quiet, distant, nocturnal, and restorative.",
+    "soundProfile": [
+      "Slow ambient textures",
+      "Soft nocturnal pads",
+      "Minimal rhythm",
+      "Low-intensity movement",
+      "Built for sleep and recovery"
+    ],
+    "visualIdentity": [
+      "Distant lights",
+      "Low-lit rooms",
+      "Sleepless windows",
+      "Soft horizon glow",
+      "Quiet midnight environments"
+    ],
+    "episodes": []
+  },
+  {
+    "id": "summer-night",
+    "seriesNumber": "04",
+    "name": "SUMMER NIGHT",
+    "displayName": "Summer Night",
+    "status": "ARCHIVED SERIES",
+    "tagline": "Warm air beneath an electric sky.",
+    "tags": [
+      "night",
+      "drive",
+      "ambient",
+      "relax",
+      "cyberpunk"
+    ],
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLa-SUUiPmKkZsVYCNT7VBKsbaGp5MLjYE",
+    "coverImage": "img/series/summer-night.jpg",
+    "heading": "A WARMER SIGNAL MOVING THROUGH THE NIGHT",
+    "concept": "Summer Night carries warmer air through the network: distant streets, soft lights, and cyberpunk ambience with a more human temperature.",
+    "atmosphere": "Warm, drifting, nostalgic, nocturnal, and open-road.",
+    "soundProfile": [
+      "Warm ambient electronics",
+      "Soft cyberpunk textures",
+      "Driving-friendly pacing",
+      "Restrained melodic glow",
+      "Built for resting and drifting"
+    ],
+    "visualIdentity": [
+      "Warm street lights",
+      "Distant roads",
+      "Electric summer sky",
+      "Open windows",
+      "Late-night city edges"
+    ],
+    "episodes": []
+  },
+  {
+    "id": "deep-signal",
+    "seriesNumber": "05",
+    "name": "DEEP SIGNAL",
+    "displayName": "Deep Signal",
+    "status": "ARCHIVED SERIES",
+    "tagline": "A transmission from below the surface.",
+    "tags": [
+      "cyberpunk",
+      "focus",
+      "cinematic",
+      "dark",
+      "ambient"
+    ],
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLa-SUUiPmKkZt7MBjQY0b2uQaUBdA8Diw",
+    "coverImage": "img/series/deep-signal.jpg",
+    "heading": "THE HEAVY MODERN CORE OF DARK NETWORK RADIO",
+    "concept": "Deep Signal descends into cinematic low end, bass pressure, and restrained electronic movement. It is heavy without becoming loud, focused without becoming empty.",
+    "atmosphere": "Heavy, subterranean, cinematic, focused, and immersive.",
+    "soundProfile": [
+      "Deep bass pressure",
+      "Modern cyberpunk electronics",
+      "Cinematic low-end movement",
+      "Restrained rhythm",
+      "Built for focus and immersion"
+    ],
+    "visualIdentity": [
+      "Underground infrastructure",
+      "Low green signal light",
+      "Concrete and metal",
+      "Subsurface corridors",
+      "Pressure and depth"
+    ],
+    "episodes": [
+      {
+        "episode": "01",
+        "title": "DEEP SIGNAL I #01",
+        "status": "ARCHIVED TRANSMISSION",
+        "duration": "DATE UNKNOWN",
+        "publishedDate": "DATE UNKNOWN",
+        "url": "https://www.youtube.com/@DARKNETWORKRADIO/videos"
+      }
+    ]
+  },
+  {
+    "id": "cyberpunk-legacy",
+    "seriesNumber": "06",
+    "name": "CYBERPUNK LEGACY",
+    "displayName": "Cyberpunk Legacy",
+    "status": "ARCHIVED SERIES",
+    "tagline": "Recovered fragments from lost futures.",
+    "tags": [
+      "cyberpunk",
+      "night",
+      "cinematic",
+      "dark",
+      "drive"
+    ],
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLa-SUUiPmKkZFq2klLkncu1vFSAg0DsTi",
+    "coverImage": "img/series/cyberpunk-legacy.jpg",
+    "heading": "A CLASSIC SIGNAL RETURNING THROUGH THE NOISE",
+    "concept": "Cyberpunk Legacy recovers analog shadows, neon ruins, and brighter dangerous energy from the archive. It is a transmission with older circuitry and sharper edges.",
+    "atmosphere": "Classic, analog, bright, dangerous, and archival.",
+    "soundProfile": [
+      "Classic cyberpunk energy",
+      "Analog-style synth textures",
+      "Brighter melodic movement",
+      "Noir electronic pressure",
+      "Built for archive immersion"
+    ],
+    "visualIdentity": [
+      "Neon ruins",
+      "Analog shadows",
+      "Recovered fragments",
+      "Archive distortion",
+      "Lost-future city light"
+    ],
+    "episodes": [
+      {
+        "episode": "01",
+        "title": "CYBERPUNK LEGACY #01",
+        "status": "ARCHIVED TRANSMISSION",
+        "duration": "DATE UNKNOWN",
+        "publishedDate": "DATE UNKNOWN",
+        "url": "https://www.youtube.com/@DARKNETWORKRADIO/videos"
+      }
+    ]
+  },
+  {
+    "id": "rain-protocol",
+    "seriesNumber": "07",
+    "name": "RAIN PROTOCOL",
+    "displayName": "Rain Protocol",
+    "status": "ARCHIVED SERIES",
+    "tagline": "After the rain, every signal sounds different.",
+    "tags": [
+      "rain",
+      "night",
+      "focus",
+      "ambient",
+      "relax"
+    ],
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLD0IiUaiAvDc",
+    "coverImage": "img/series/rain-protocol.jpg",
+    "heading": "A QUIET TRANSMISSION AFTER THE STORM",
+    "concept": "Rain Protocol explores the quiet city after rainfall through restrained melodies, wet reflections, and a softer electronic atmosphere.",
+    "atmosphere": "Calm, reflective, green, nocturnal, and slightly melancholic.",
+    "soundProfile": [
+      "Soft instrumental electronics",
+      "Restrained rhythm",
+      "Gentle string textures",
+      "Minimal percussion",
+      "Built for quiet focus"
+    ],
+    "visualIdentity": [
+      "Wet plants and pavement",
+      "Green tunnels",
+      "A distant red signal",
+      "Rain as texture rather than subject",
+      "Quiet urban environments"
+    ],
+    "episodes": []
+  },
+  {
+    "id": "neon-drift",
+    "seriesNumber": "08",
+    "name": "NEON DRIFT",
+    "displayName": "Neon Drift",
+    "status": "ARCHIVED SERIES",
+    "tagline": "The city never sleeps. Only the reflections change.",
+    "tags": [
+      "cyberpunk",
+      "night",
+      "drive",
+      "focus",
+      "cinematic",
+      "dark"
+    ],
+    "coverImage": "img/series/neon-drift.jpg",
+    "heading": "A HARD-BOILED TRANSMISSION THROUGH THE CITY",
+    "concept": "Neon Drift follows an anonymous figure through the city from the beginning of night until dawn. The city is seen through reflections, wet asphalt, steel, glass, and distant lights.",
+    "atmosphere": "Urban, restrained, cinematic, nocturnal, and emotionally distant.",
+    "soundProfile": [
+      "Mid-tempo cyberpunk",
+      "Deep bass movement",
+      "Restrained melodies",
+      "Instrumental only",
+      "Built for focus and night driving"
+    ],
+    "visualIdentity": [
+      "Reflections on wet streets",
+      "Stainless steel and glass",
+      "Anonymous male figure",
+      "Night-to-dawn progression",
+      "Hardboiled urban atmosphere"
+    ],
+    "episodes": [
+      {
+        "episode": "01",
+        "title": "NEON DRIFT #01",
+        "status": "ARCHIVED TRANSMISSION",
+        "duration": "01:00:00",
+        "publishedDate": "2026.07.09",
+        "url": "https://www.youtube.com/"
+      },
+      {
+        "episode": "02",
+        "title": "NEON DRIFT #02",
+        "status": "ARCHIVED TRANSMISSION",
+        "duration": "01:00:00",
+        "publishedDate": "2026.07.10",
+        "url": "https://www.youtube.com/"
+      }
+    ]
+  }
+]
